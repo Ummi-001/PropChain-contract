@@ -1,5 +1,5 @@
 # 🛡️ Automated Security & Mutation Audit Log
-Generated on: Tue Nov 17 10:13:34 UTC 2026
+Generated on: Wed Nov 18 09:45:20 UTC 2026
 ---
 ## 📦 Dependency License & Advisory Checks (cargo-deny)
 ```text
@@ -9,13 +9,13 @@ Generated on: Tue Nov 17 10:13:34 UTC 2026
 [0m[36m20[0m [0m[36m│[0m [0m[31munlicensed[0m = "deny"
    [0m[36m│[0m [0m[31m━━━━━━━━━━[0m
 
-2026-11-17 10:13:34 [[31mERROR[0m] failed to validate configuration file /home/runner/work/PropChain-contract/PropChain-contract/deny.toml[0m
+2026-11-18 09:45:20 [[31mERROR[0m] failed to validate configuration file /home/runner/work/PropChain-contract/PropChain-contract/deny.toml[0m
 ```
 ---
 ## 🔍 Vulnerability Advisory Scans (cargo-audit)
 ```text
 [0m[0m[1m[32m    Fetching[0m advisory database from `https://github.com/RustSec/advisory-db.git`
-[0m[0m[1m[32m      Loaded[0m 1509 security advisories (from /home/runner/.cargo/advisory-db)
+[0m[0m[1m[32m      Loaded[0m 1533 security advisories (from /home/runner/.cargo/advisory-db)
 [0m[0m[1m[32m    Updating[0m crates.io index
 [0m[0m[1m[32m    Scanning[0m Cargo.lock for vulnerabilities (829 crate dependencies)
 [0m[0m[1m[31mCrate:    [0m crypto-bigint
@@ -179,12 +179,45 @@ Generated on: Tue Nov 17 10:13:34 UTC 2026
 
 [0m[0m[1m[31mCrate:    [0m zip
 [0m[0m[1m[31mVersion:  [0m 2.3.0
+[0m[0m[1m[31mTitle:    [0m `ZipStreamReader` extracts entries under local-header names that can differ from the central directory
+[0m[0m[1m[31mDate:     [0m 2026-10-17
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0548
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0548
+[0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.5
+
+[0m[0m[1m[31mCrate:    [0m zip
+[0m[0m[1m[31mVersion:  [0m 2.3.0
 [0m[0m[1m[31mTitle:    [0m  Insecure Preservation of SUID/SGID Bits during ZIP Extraction Leading to Potential Privilege Escalation
 [0m[0m[1m[31mDate:     [0m 2026-10-09
 [0m[0m[1m[31mID:       [0m RUSTSEC-2026-0367
 [0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0367
 [0m[0m[1m[31mSeverity: [0m 7.3 (high)
 [0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
+
+[0m[0m[1m[31mCrate:    [0m zip
+[0m[0m[1m[31mVersion:  [0m 2.3.0
+[0m[0m[1m[31mTitle:    [0m AES entries returned without checking their authentication code when the data ends early or is empty
+[0m[0m[1m[31mDate:     [0m 2026-10-22
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0545
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0545
+[0m[0m[1m[31mSeverity: [0m 6.5 (medium)
+[0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
+
+[0m[0m[1m[33mCrate:    [0m chrono
+[0m[0m[1m[33mVersion:  [0m 0.4.44
+[0m[0m[1m[33mWarning:  [0m unmaintained
+[0m[0m[1m[33mTitle:    [0m chrono is unmaintained
+[0m[0m[1m[33mDate:     [0m 2026-09-14
+[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0543
+[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0543
+
+[0m[0m[1m[33mCrate:    [0m humantime
+[0m[0m[1m[33mVersion:  [0m 2.3.0
+[0m[0m[1m[33mWarning:  [0m unmaintained
+[0m[0m[1m[33mTitle:    [0m humantime is unmaintained
+[0m[0m[1m[33mDate:     [0m 2026-09-14
+[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0542
+[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0542
 
 [0m[0m[1m[33mCrate:    [0m instant
 [0m[0m[1m[33mVersion:  [0m 0.1.13
@@ -306,8 +339,8 @@ Generated on: Tue Nov 17 10:13:34 UTC 2026
 [0m[0m[1m[33mVersion:  [0m 0.9.8
 [0m[0m[1m[33mWarning:  [0m yanked
 
-[0m[0m[1m[31merror:[0m 20 vulnerabilities found!
-[0m[0m[1m[33mwarning:[0m 16 allowed warnings found
+[0m[0m[1m[31merror:[0m 22 vulnerabilities found!
+[0m[0m[1m[33mwarning:[0m 18 allowed warnings found
 ```
 ---
 ## 🧬 Mutation Gate: lending
