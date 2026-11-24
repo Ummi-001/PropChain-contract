@@ -1,5 +1,5 @@
 # 🛡️ Automated Security & Mutation Audit Log
-Generated on: Mon Nov 23 10:19:30 UTC 2026
+Generated on: Tue Nov 24 12:00:27 UTC 2026
 ---
 ## 📦 Dependency License & Advisory Checks (cargo-deny)
 ```text
@@ -9,13 +9,13 @@ Generated on: Mon Nov 23 10:19:30 UTC 2026
 [0m[36m20[0m [0m[36m│[0m [0m[31munlicensed[0m = "deny"
    [0m[36m│[0m [0m[31m━━━━━━━━━━[0m
 
-2026-11-23 10:19:30 [[31mERROR[0m] failed to validate configuration file /home/runner/work/PropChain-contract/PropChain-contract/deny.toml[0m
+2026-11-24 12:00:27 [[31mERROR[0m] failed to validate configuration file /home/runner/work/PropChain-contract/PropChain-contract/deny.toml[0m
 ```
 ---
 ## 🔍 Vulnerability Advisory Scans (cargo-audit)
 ```text
 [0m[0m[1m[32m    Fetching[0m advisory database from `https://github.com/RustSec/advisory-db.git`
-[0m[0m[1m[32m      Loaded[0m 1562 security advisories (from /home/runner/.cargo/advisory-db)
+[0m[0m[1m[32m      Loaded[0m 1566 security advisories (from /home/runner/.cargo/advisory-db)
 [0m[0m[1m[32m    Updating[0m crates.io index
 [0m[0m[1m[32m    Scanning[0m Cargo.lock for vulnerabilities (829 crate dependencies)
 [0m[0m[1m[31mCrate:    [0m crypto-bigint
@@ -36,24 +36,15 @@ Generated on: Mon Nov 23 10:19:30 UTC 2026
 
 [0m[0m[1m[31mCrate:    [0m rustls
 [0m[0m[1m[31mVersion:  [0m 0.21.12
-[0m[0m[1m[31mTitle:    [0m `Debug` impls for client session values expose TLS secrets
+[0m[0m[1m[31mTitle:    [0m Unauthenticated ServerHello can downgrade later connections to classical key exchange
 [0m[0m[1m[31mDate:     [0m 2026-10-14
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0346
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0346
-[0m[0m[1m[31mSeverity: [0m 4 (medium)
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0349
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0349
+[0m[0m[1m[31mSeverity: [0m 3.7 (low)
 [0m[0m[1m[31mSolution: [0m Upgrade to >=0.23.46
 
 [0m[0m[1m[31mCrate:    [0m rustls
 [0m[0m[1m[31mVersion:  [0m 0.21.12
-[0m[0m[1m[31mTitle:    [0m Unauthenticated ServerHello can downgrade later connections to classical key exchange
-[0m[0m[1m[31mDate:     [0m 2026-10-14
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0349
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0349
-[0m[0m[1m[31mSeverity: [0m 3.7 (low)
-[0m[0m[1m[31mSolution: [0m Upgrade to >=0.23.46
-
-[0m[0m[1m[31mCrate:    [0m rustls
-[0m[0m[1m[31mVersion:  [0m 0.22.4
 [0m[0m[1m[31mTitle:    [0m `Debug` impls for client session values expose TLS secrets
 [0m[0m[1m[31mDate:     [0m 2026-10-14
 [0m[0m[1m[31mID:       [0m RUSTSEC-2026-0346
@@ -70,21 +61,14 @@ Generated on: Mon Nov 23 10:19:30 UTC 2026
 [0m[0m[1m[31mSeverity: [0m 3.7 (low)
 [0m[0m[1m[31mSolution: [0m Upgrade to >=0.23.46
 
-[0m[0m[1m[31mCrate:    [0m rustls-webpki
-[0m[0m[1m[31mVersion:  [0m 0.101.7
-[0m[0m[1m[31mTitle:    [0m Reachable panic in certificate revocation list parsing
-[0m[0m[1m[31mDate:     [0m 2026-04-22
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0104
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0104
-[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.13, <0.104.0-alpha.1 OR >=0.104.0-alpha.7
-
-[0m[0m[1m[31mCrate:    [0m rustls-webpki
-[0m[0m[1m[31mVersion:  [0m 0.101.7
-[0m[0m[1m[31mTitle:    [0m Certificate verification may accept distrusted intermediates
-[0m[0m[1m[31mDate:     [0m 2026-10-20
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0382
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0382
-[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.16, <0.104.0-alpha.1 OR >=0.104.0-alpha.8
+[0m[0m[1m[31mCrate:    [0m rustls
+[0m[0m[1m[31mVersion:  [0m 0.22.4
+[0m[0m[1m[31mTitle:    [0m `Debug` impls for client session values expose TLS secrets
+[0m[0m[1m[31mDate:     [0m 2026-10-14
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0346
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0346
+[0m[0m[1m[31mSeverity: [0m 4 (medium)
+[0m[0m[1m[31mSolution: [0m Upgrade to >=0.23.46
 
 [0m[0m[1m[31mCrate:    [0m rustls-webpki
 [0m[0m[1m[31mVersion:  [0m 0.101.7
@@ -103,7 +87,7 @@ Generated on: Mon Nov 23 10:19:30 UTC 2026
 [0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.12, <0.104.0-alpha.1 OR >=0.104.0-alpha.6
 
 [0m[0m[1m[31mCrate:    [0m rustls-webpki
-[0m[0m[1m[31mVersion:  [0m 0.102.8
+[0m[0m[1m[31mVersion:  [0m 0.101.7
 [0m[0m[1m[31mTitle:    [0m Reachable panic in certificate revocation list parsing
 [0m[0m[1m[31mDate:     [0m 2026-04-22
 [0m[0m[1m[31mID:       [0m RUSTSEC-2026-0104
@@ -111,7 +95,7 @@ Generated on: Mon Nov 23 10:19:30 UTC 2026
 [0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.13, <0.104.0-alpha.1 OR >=0.104.0-alpha.7
 
 [0m[0m[1m[31mCrate:    [0m rustls-webpki
-[0m[0m[1m[31mVersion:  [0m 0.102.8
+[0m[0m[1m[31mVersion:  [0m 0.101.7
 [0m[0m[1m[31mTitle:    [0m Certificate verification may accept distrusted intermediates
 [0m[0m[1m[31mDate:     [0m 2026-10-20
 [0m[0m[1m[31mID:       [0m RUSTSEC-2026-0382
@@ -124,6 +108,14 @@ Generated on: Mon Nov 23 10:19:30 UTC 2026
 [0m[0m[1m[31mDate:     [0m 2026-04-14
 [0m[0m[1m[31mID:       [0m RUSTSEC-2026-0099
 [0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0099
+[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.12, <0.104.0-alpha.1 OR >=0.104.0-alpha.6
+
+[0m[0m[1m[31mCrate:    [0m rustls-webpki
+[0m[0m[1m[31mVersion:  [0m 0.102.8
+[0m[0m[1m[31mTitle:    [0m Name constraints for URI names were incorrectly accepted
+[0m[0m[1m[31mDate:     [0m 2026-04-14
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0098
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0098
 [0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.12, <0.104.0-alpha.1 OR >=0.104.0-alpha.6
 
 [0m[0m[1m[31mCrate:    [0m rustls-webpki
@@ -136,11 +128,19 @@ Generated on: Mon Nov 23 10:19:30 UTC 2026
 
 [0m[0m[1m[31mCrate:    [0m rustls-webpki
 [0m[0m[1m[31mVersion:  [0m 0.102.8
-[0m[0m[1m[31mTitle:    [0m Name constraints for URI names were incorrectly accepted
-[0m[0m[1m[31mDate:     [0m 2026-04-14
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0098
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0098
-[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.12, <0.104.0-alpha.1 OR >=0.104.0-alpha.6
+[0m[0m[1m[31mTitle:    [0m Reachable panic in certificate revocation list parsing
+[0m[0m[1m[31mDate:     [0m 2026-04-22
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0104
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0104
+[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.13, <0.104.0-alpha.1 OR >=0.104.0-alpha.7
+
+[0m[0m[1m[31mCrate:    [0m rustls-webpki
+[0m[0m[1m[31mVersion:  [0m 0.102.8
+[0m[0m[1m[31mTitle:    [0m Certificate verification may accept distrusted intermediates
+[0m[0m[1m[31mDate:     [0m 2026-10-20
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0382
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0382
+[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.16, <0.104.0-alpha.1 OR >=0.104.0-alpha.8
 
 [0m[0m[1m[31mCrate:    [0m ruzstd
 [0m[0m[1m[31mVersion:  [0m 0.5.0
@@ -161,12 +161,11 @@ Generated on: Mon Nov 23 10:19:30 UTC 2026
 
 [0m[0m[1m[31mCrate:    [0m zip
 [0m[0m[1m[31mVersion:  [0m 2.3.0
-[0m[0m[1m[31mTitle:    [0m zip: `ZipArchive::extract` aborts the process on a symlink entry with a large declared size
-[0m[0m[1m[31mDate:     [0m 2026-10-22
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0429
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0429
-[0m[0m[1m[31mSeverity: [0m 7.5 (high)
-[0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
+[0m[0m[1m[31mTitle:    [0m `ZipStreamReader` extracts entries under local-header names that can differ from the central directory
+[0m[0m[1m[31mDate:     [0m 2026-10-17
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0548
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0548
+[0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.5
 
 [0m[0m[1m[31mCrate:    [0m zip
 [0m[0m[1m[31mVersion:  [0m 2.3.0
@@ -179,18 +178,20 @@ Generated on: Mon Nov 23 10:19:30 UTC 2026
 
 [0m[0m[1m[31mCrate:    [0m zip
 [0m[0m[1m[31mVersion:  [0m 2.3.0
-[0m[0m[1m[31mTitle:    [0m `ZipStreamReader` extracts entries under local-header names that can differ from the central directory
-[0m[0m[1m[31mDate:     [0m 2026-10-17
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0548
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0548
-[0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.5
+[0m[0m[1m[31mTitle:    [0m zip: `ZipArchive::extract` aborts the process on a symlink entry with a large declared size
+[0m[0m[1m[31mDate:     [0m 2026-10-22
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0429
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0429
+[0m[0m[1m[31mSeverity: [0m 7.5 (high)
+[0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
 
 [0m[0m[1m[31mCrate:    [0m zip
 [0m[0m[1m[31mVersion:  [0m 2.3.0
-[0m[0m[1m[31mTitle:    [0m zip: `ZipArchive::extract` creates symbolic links whose attacker-controlled targets are outside the destination directory
-[0m[0m[1m[31mDate:     [0m 2026-10-09
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0368
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0368
+[0m[0m[1m[31mTitle:    [0m AES entries returned without checking their authentication code when the data ends early or is empty
+[0m[0m[1m[31mDate:     [0m 2026-10-22
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0545
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0545
+[0m[0m[1m[31mSeverity: [0m 6.5 (medium)
 [0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
 
 [0m[0m[1m[31mCrate:    [0m zip
@@ -204,11 +205,10 @@ Generated on: Mon Nov 23 10:19:30 UTC 2026
 
 [0m[0m[1m[31mCrate:    [0m zip
 [0m[0m[1m[31mVersion:  [0m 2.3.0
-[0m[0m[1m[31mTitle:    [0m AES entries returned without checking their authentication code when the data ends early or is empty
-[0m[0m[1m[31mDate:     [0m 2026-10-22
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0545
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0545
-[0m[0m[1m[31mSeverity: [0m 6.5 (medium)
+[0m[0m[1m[31mTitle:    [0m zip: `ZipArchive::extract` creates symbolic links whose attacker-controlled targets are outside the destination directory
+[0m[0m[1m[31mDate:     [0m 2026-10-09
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0368
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0368
 [0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
 
 [0m[0m[1m[33mCrate:    [0m chrono
@@ -310,18 +310,18 @@ Generated on: Mon Nov 23 10:19:30 UTC 2026
 [0m[0m[1m[33mCrate:    [0m lru
 [0m[0m[1m[33mVersion:  [0m 0.12.5
 [0m[0m[1m[33mWarning:  [0m unsound
-[0m[0m[1m[33mTitle:    [0m `IterMut` violates Stacked Borrows by invalidating internal pointer
-[0m[0m[1m[33mDate:     [0m 2026-01-07
-[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0002
-[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0002
-
-[0m[0m[1m[33mCrate:    [0m lru
-[0m[0m[1m[33mVersion:  [0m 0.12.5
-[0m[0m[1m[33mWarning:  [0m unsound
 [0m[0m[1m[33mTitle:    [0m Potential use-after-free due to lack of panic safety in `LruCache::pop()`
 [0m[0m[1m[33mDate:     [0m 2026-05-12
 [0m[0m[1m[33mID:       [0m RUSTSEC-2026-0253
 [0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0253
+
+[0m[0m[1m[33mCrate:    [0m lru
+[0m[0m[1m[33mVersion:  [0m 0.12.5
+[0m[0m[1m[33mWarning:  [0m unsound
+[0m[0m[1m[33mTitle:    [0m `IterMut` violates Stacked Borrows by invalidating internal pointer
+[0m[0m[1m[33mDate:     [0m 2026-01-07
+[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0002
+[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0002
 
 [0m[0m[1m[33mCrate:    [0m rustix
 [0m[0m[1m[33mVersion:  [0m 1.1.4
